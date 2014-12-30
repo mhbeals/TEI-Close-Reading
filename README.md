@@ -86,7 +86,7 @@ For claims or arguments, surround your text with these
 + In **key**, explain why you believe this claim is true or not
 + In **n**, put a full citation to the relevant source
 + In **cert** (short for certainty), put: high, medium, low or unknown
-+ In **ref**, put the link to the website where you got the information to assess this claim. If you are doing it based on lecture material, write "_blank", but know that lecture material is a very weak source and should be avoided wherever possible
++ In **ref**, put the link to the website where you got the information to assess this claim. If you are doing it based on lecture material, write "http://www.shu.ac.uk", but know that lecture material is a very weak source and should be avoided wherever possible
 
 When you are happy with your work, hit (cntl+s) and call over your tutor, who will check your work.
 
