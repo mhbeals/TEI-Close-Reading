@@ -1,7 +1,5 @@
 # Close Reading with TEI #
 
-=================
-
 This workshop will explore a historical text and help you create a digital record of your analysis
 
 ### Vetting a Website ###
