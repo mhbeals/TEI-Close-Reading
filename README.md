@@ -1,4 +1,4 @@
-Close Reading with TEI
+# Close Reading with TEI #
 
 =================
 
