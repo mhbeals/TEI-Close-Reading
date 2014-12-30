@@ -69,7 +69,7 @@ For persons, surround your text with these
 + Inside the speech marks for **key**, include the real full name of the person mentioned 
 + In **from** and **to**, include their birth and death years, using ? for unknown years
 + In **role**, put the occupation, role or 'claim to fame' for this individual.  
-+ In **rep**, put the URL (link) to the Dictionary of National Biography, Wikipedia or other biography website where you found this information. If there is a & in your link, you will need to replace this with &amp;amp;
++ In **ref**, put the URL (link) to the Dictionary of National Biography, Wikipedia or other biography website where you found this information. If there is a & in your link, you will need to replace this with &amp;amp;
 
  
 For places, surround your text with these
