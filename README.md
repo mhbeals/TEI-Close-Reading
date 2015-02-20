@@ -66,7 +66,7 @@ Now that you have highlighted these, you are going to put proper code around the
 
 For persons, surround your text with these
 
-<code>&lt;persname key="Last, First" from="YYYY" to="YYYY" role="Occupation" ref="http://www.website.com/webpage.html"&gt; &lt;/person&gt;</code>
+<code>&lt;persname key="Last, First" from="YYYY" to="YYYY" role="Occupation" ref="http://www.website.com/webpage.html"&gt; &lt;/persname&gt;</code>
 
 + Inside the speech marks for **key**, include the real full name of the person mentioned 
 + In **from** and **to**, include their birth and death years, using ? for unknown years
@@ -76,7 +76,7 @@ For persons, surround your text with these
  
 For places, surround your text with these
 
-<code>&lt;place key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/place&gt;</code>
+<code>&lt;placename key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/placename&gt;</code>
 
 + In **key**, put the city and country with best information you can find for the modern names for this location
 + In **ref**, put a link to the relevant coordinates on Wikipedia GeoHack website (http://tools.wmflabs.org/geohack/)
