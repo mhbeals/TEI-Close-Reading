@@ -76,7 +76,7 @@ For persons, surround your text with these
  
 For places, surround your text with these
 
-<code>&lt;placeName key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/placeName&gt;</code>
+<code>&lt;placeName key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB"&gt; &lt;/placeName&gt;</code>
 
 + In **key**, put the city and country with best information you can find for the modern names for this location
 + In **ref**, put a link to the relevant coordinates on Wikipedia GeoHack website (http://tools.wmflabs.org/geohack/)
