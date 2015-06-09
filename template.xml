@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Assessmentstyle.xsl"?>
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Title of Primary Source</title>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Transcribed by Your Name from a digital image on Website, accessed at http://www.website.com/webpage on DD Month YYYY.</authority>
+			</publicationStmt>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body> 
+		<p>
+			Sample text.
+			<persName>Name</persName>, <placeName>Place</placeName>, <interp>Claim</interp>.
+		</p>
+		</body>
+	</text>
+</TEI>
