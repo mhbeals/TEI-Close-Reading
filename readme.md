@@ -77,13 +77,13 @@ You are now going to *encode* or *mark-up* your text.
 
 At the start of your transcription, and at the start every new paragraph (or heading), place a \<p\>. This explains to the computer that a new paragraph has begun. At the end every paragraph (or heading), place a \</p\>. 
 
-Re-read your page and highlight / colour the following things:
+Re-read your page and look for the following things:
 
 + Any persons mentioned (including any he/she if they refer to a specific person)
 + Any places mentioned
 + Any claims, assertions or arguments made  
 
-Now that you have highlighted these, you are going to put proper code around them.
+Now that you have noted these, you are going to put proper code around them.
 
 **For persons**, *surround* your original text with these
 
