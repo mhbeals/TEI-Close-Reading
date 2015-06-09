@@ -5,11 +5,22 @@
     <xsl:template match="/">
         <html>
             <body>
+                <h1><xsl:value-of select="teiCorpus/teiHeader/fileDesc/titleStmt/title"/></h1>
+                <h4>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/publicationStmt/authority"/>.
+                    <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/publicationStmt/authority"/>.
+                </h4>
+                <hr/>
                 <h2>
-                    <a href="http://www.recoveredhistories.org/pamphlet1.php?page=1&amp;orderby=MaxID&amp;catid=66" target="_blank" style="text-decoration:none;color:black;"><xsl:value-of
-                        select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/titleStmt/title"/></a>, pp. <xsl:value-of
-                            select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/titleStmt/title"/>
                 </h2>
+                <h4>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/publisher"/>.<br/>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/distributor"/><br/>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/pubPlace/settlement"/>: <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/date/@when"/>.
+                </h4>
+                <hr/>
+                <h4>Page: <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/></h4>
                 <xsl:for-each select="teiCorpus/TEI/text/body">
                     <p><xsl:apply-templates/></p>
                 </xsl:for-each>
