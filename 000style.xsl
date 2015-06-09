@@ -6,12 +6,11 @@
         <html>
             <body>
                 <h2>
-                    <xsl:value-of
-                        select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/titleStmt/title"/>
+                    <a href="http://www.recoveredhistories.org/pamphlet1.php?page=1&amp;orderby=MaxID&amp;catid=66" target="_blank" style="text-decoration:none;color:black;"><xsl:value-of
+                        select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/titleStmt/title"/></a>, pp. <xsl:value-of
+                            select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/>
                 </h2>
-                <h3>Page <xsl:value-of
-                    select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/></h3>
-                <xsl:for-each select="teiCorpus/TEI/text/body/p">
+                <xsl:for-each select="teiCorpus/TEI/text/body">
                     <p><xsl:apply-templates/></p>
                 </xsl:for-each>
                 <h3>Key:</h3>
@@ -32,5 +31,7 @@
     <xsl:template match="interp">
         <a style="color:red;text-decoration:none;" title="{@key}&#013;&#013;{@n}, available at {@ref}"><xsl:value-of select="."/></a>
     </xsl:template>
-    
+    <xsl:template match="pb">
+        <h4>Page: <a name="{@n}"><xsl:value-of select="@n"/></a></h4> 
+    </xsl:template>
 </xsl:stylesheet>
