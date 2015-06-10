@@ -5,14 +5,8 @@
     <xsl:template match="/">
         <html>
             <body>
-                <xsl:if test="teiCorpus/TEI/text/body != ''">
-                <h1><xsl:value-of select="teiCorpus/teiHeader/fileDesc/titleStmt/title"/></h1>
-                <h4>
-                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/publicationStmt/authority"/>.
-                    <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/publicationStmt/authority"/>.
-                </h4>
-                <hr/>
-                <h2>
+               
+                <center><h2>
                     <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/titleStmt/title"/>
                 </h2>
                 <h4>
@@ -21,27 +15,17 @@
                     <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/pubPlace/settlement"/>: <xsl:value-of select="teiCorpus/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/date/@when"/>.
                 </h4>
                 <hr/>
+                <h4><xsl:value-of select="teiCorpus/teiHeader/fileDesc/titleStmt/title"/>.<br/>
+                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/publicationStmt/authority"/>.
+                </h4>
+                </center>
+                <hr/>
                 <h4>Page: <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/></h4>
                 <xsl:for-each select="teiCorpus/TEI/text/body">
                     <p><xsl:apply-templates/></p>
+                    <i><xsl:value-of select="../../teiHeader/fileDesc/publicationStmt/authority"/>.</i>
                 </xsl:for-each>
                 
-                <h1><xsl:value-of select="teiCorpus/teiHeader/fileDesc/titleStmt/title"/></h1>
-                <h4>
-                    <xsl:value-of select="teiCorpus/teiHeader/fileDesc/publicationStmt/authority"/>.
-                    <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/publicationStmt/authority"/>.
-                </h4>
-                <hr/>
-                </xsl:if>
-                <h4>
-                    <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title"/><br/>
-                    <xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/><br/>
-                </h4>
-                <hr/>
-                <h4>Page: <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/></h4>
-                <xsl:for-each select="TEI/text/body">
-                    <p><xsl:apply-templates/></p>
-                </xsl:for-each>
                 <h3>Key:</h3>
                 <ul>
                     <li style="color:blue;text-decoration:none;">Individual</li>
