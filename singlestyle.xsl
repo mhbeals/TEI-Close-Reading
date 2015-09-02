@@ -9,7 +9,7 @@
                     <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title"/><br/>
                     <xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/><br/>
                 </h4>
-                <xsl:for-each select="TEI/text/body">
+                <xsl:for-each select="TEI/text/body/p">
                     <p><xsl:apply-templates/></p>
                 </xsl:for-each>
                 <h3>Key:</h3>
