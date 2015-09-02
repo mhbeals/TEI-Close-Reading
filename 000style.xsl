@@ -21,7 +21,7 @@
                 </center>
                 <hr/>
                 <h4>Page: <xsl:value-of select="teiCorpus/TEI/teiHeader/fileDesc/sourceDesc/bibl/biblScope"/></h4>
-                <xsl:for-each select="teiCorpus/TEI/text/body">
+                <xsl:for-each select="teiCorpus/TEI/text/body/p">
                     <p><xsl:apply-templates/></p>
                     <i><xsl:value-of select="../../teiHeader/fileDesc/publicationStmt/authority"/>.</i>
                 </xsl:for-each>
